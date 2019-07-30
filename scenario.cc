@@ -4,6 +4,7 @@
 #include <string.h>
 #include <random>
 #include "bench.h"
+
 //http://siv3d.hateblo.jp/entry/2013/02/17/231829
 simulate pre_scenario(void){
 	core big(2.8,4,46.44);

@@ -11,10 +11,9 @@ C = CP
 
 #$(NAME):	$(OBJS)
 #		$(CC) $(OBJS) $(LDFLAGS) $(LIBS) -o $(NAME)
-
-.cc.exe:
-		$(CC) $(CFLAGS) $(LDFLAGS) $^ $(LDLIBS) -o $@
-a.exe: a.cc a.h b.cc
+#.cc.exe:
+#		$(CC) $(CFLAGS) $(LDFLAGS) $^ $(LDLIBS) -o $@
+#a.exe: a.cc a.h b.cc
 
 help:;
 	@echo ' make run               | make r'
@@ -84,7 +83,7 @@ rfc:;
 	make run_first_check
 run_first_check:;
 		make e
-		@for i in 1 2 3 4 5 6 7 8 9 10 11; do \
+		@for i in 1 2 3 4 5 6 7 8 9 10; do \
 		echo $$i;\
 			./benchmark.exe -s $$i -c ./output/result -m normal -w > ./output/story$$i\_normal.log;\
 			./benchmark.exe -s $$i -c ./output/result -m normal -w non_first_check > ./output/story$$i\_normal\_nfc.log; \
@@ -174,7 +173,7 @@ eva3:;
 		@echo done
 		mv ./output/result_shaping.csv ./save/result_w.csv
 # 回数の指定
-NUM = 1000
+NUM = 10
 
 # 複数回実行用
 eva_A:;

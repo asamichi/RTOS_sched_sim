@@ -38,8 +38,7 @@ void allocate_scenario(string name_a,int line_num){
 			key = i;
 			key_flag = -1;
 		}
-	}
-	
+	}	
 	//int key = 20;
 	//key--;
 	//cout << key << "\n";
@@ -211,7 +210,7 @@ int main(int argc, char *argv[]){
 				cout << br;
 				cout << "non _first_check | nfc              :No switching check in first of tasks." << br;
 				cout << br;
-				cout << "-n [number]         :Number of trials"
+				cout << "-n [number]         :Number of trials";
 				return 0;
 				break;
 			}
